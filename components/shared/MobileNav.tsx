@@ -33,8 +33,8 @@ const MobileNav = ({ boards }: { boards: string | undefined }) => {
 						onClick={() => setOpen(false)}
 					/>
 
-					<div className="fixed top-20 left-3 right-3 bottom-6 z-40 flex justify-center items-center">
-						<div className="bg-white-darkgray w-[300px] mt-12 rounded-lg">
+					<div className=" z-20 fixed top-20 left-3 right-3 bottom-6  flex justify-center items-center">
+						<div className="bg-white-darkgray z-40 w-[300px] mt-12 rounded-lg">
 							<h2 className="h4 mt-8 uppercase pl-4 mb-2">
 								All boards ({Boards.length})
 							</h2>
