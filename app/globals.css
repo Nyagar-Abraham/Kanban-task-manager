@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+	.bg-white-darkgray {
+		@apply bg-white dark:bg-mediumGray;
+	}
+	.text-darkgray-white {
+		@apply text-darkGray dark:text-white;
+	}
+	.text-mediumGray-VeryLightGray {
+		@apply text-mediumGray dark:text-veryLightGray;
+	}
+
+	.text-mediumGray-VeryLightGray {
+		@apply text-mediumGray dark:text-veryLightGray;
+	}
+
+	.bg-lightgray-dark {
+		@apply bg-lightestGray dark:bg-darkGray;
+	}
+
+	.bg-veryLightGray-dark {
+		@apply bg-veryLightGray dark:bg-mediumGray;
+	}
+
+	.bg-white-dark {
+		@apply bg-white dark:bg-slate-900;
+	}
+	.bg-light-darkGray {
+		@apply bg-veryLightGray
+		 dark:bg-slate-950/80;
+	}
+
+	.h1 {
+		@apply font-bold text-[24px] leading-[30px];
+	}
+	.h2 {
+		@apply font-bold text-[18px] leading-[23px];
+	}
+	.h3 {
+		@apply font-bold text-[15px] leading-[19px];
+	}
+	.h4 {
+		@apply font-bold text-[12px] leading-[15px];
+	}
+	.p-large {
+		@apply text-mediumGray  font-medium text-[13px] leading-[23px];
+	}
+	.p-small {
+		@apply text-mediumGray font-bold text-[12px] leading-[15px];
+	}
+
+	.shadow {
+		box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.096), -10px -10px 10px #fff;
+	}
+}
