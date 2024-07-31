@@ -49,17 +49,20 @@ const config = {
 			},
 		},
 	},
-	plugins: [require('tailwindcss-animate'), function({ addUtilities }) {
-		addUtilities({
-			'.no-scrollbar': {
-				'-ms-overflow-style': 'none', /* IE and Edge */
-				'scrollbar-width': 'none', /* Firefox */
-			},
-			'.no-scrollbar::-webkit-scrollbar': {
-				'display': 'none', /* Chrome, Safari, Opera */
-			},
-		});
-	},],
+	plugins: [
+		require('tailwindcss-animate'),
+		function ({ addUtilities }: any) {
+			addUtilities({
+				'.no-scrollbar': {
+					'-ms-overflow-style': 'none' /* IE and Edge */,
+					'scrollbar-width': 'none' /* Firefox */,
+				},
+				'.no-scrollbar::-webkit-scrollbar': {
+					display: 'none' /* Chrome, Safari, Opera */,
+				},
+			});
+		},
+	],
 } satisfies Config;
 
 export default config;
